@@ -2,14 +2,35 @@ nav, .page-footer {
     background-color:rgb(65,158,130);
 }
 
-h4 {
+h5 {
     text-align:center;
     margin:0px;
     padding:20px 0px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
     text-align:center;
     margin:0px;
     padding:0px 0px 20px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color:rgb(90,219,181)
+}
+
+.labelFloat {
+    position: relative;
+    top: -206px;
+    text-align: center;
+    background-color: RGBA(0,0,0,.5);
+    color: white;
+    padding-bottom: 5px;
+    display: none;
+}
+
+.carousel-item:hover>.labelFloat {
+    display: block;
+    background-color: RGBA(0,0,0,.5);
 }
