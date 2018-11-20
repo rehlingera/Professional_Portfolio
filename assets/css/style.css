@@ -34,3 +34,8 @@ body {
     display: block;
     background-color: RGBA(0,0,0,.5);
 }
+
+#sendButton {
+    display: block;
+    margin: 0 auto;
+}
