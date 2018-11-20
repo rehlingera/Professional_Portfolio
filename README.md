@@ -3,7 +3,7 @@
 <a href="https://rehlingera.githubio/Professional_Portfolio" target="_blank">Deployed page</a>
 <br />
 <br />
-###Libraries used:
+Libraries used:
 <ul>
   <li>Google Materialize</li>
   <li>jQuery</li>
