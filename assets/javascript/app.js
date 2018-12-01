@@ -32,6 +32,12 @@ $(document).on("mousedown", ".carousel-item", function() {
     deployLink = "https://rehlingera.github.io/unit-4-game";
     codeLink = "https://github.com/rehlingera/unit-4-game";
   }
+  else if(label==="liri") {
+    title = "LIRI Bot";
+    description = "A bot for the Git Bash console that performs API calls to OMDB, Spotify and BandsInTown. This bot will take user input and display concert dates and venues for bands, Spotify search results for songs and information for movie titles.";
+    deployLink = "https://github.com/rehlingera/liri-node-app";
+    codeLink = "https://github.com/rehlingera/liri-node-app";
+  }
   else if(label==="boredom") {
     title = "BoreDom";
     description = "BoreDom is an API app that will take a search term and display results from Google Books, Open Movie Database and Edamam (a recipe database). When a search is executed, the search term is logged in Google FireBase and called into a button on the app for future use.";
