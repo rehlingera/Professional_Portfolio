@@ -38,6 +38,12 @@ $(document).on("mousedown", ".carousel-item", function() {
     deployLink = "https://github.com/rehlingera/liri-node-app";
     codeLink = "https://github.com/rehlingera/liri-node-app";
   }
+  else if(label==="bamazon") {
+    title = "Bamazon";
+    description = "An console app masquerading as an online store. Some of the items appear to be cursed.";
+    deployLink = "https://github.com/rehlingera/bamazon";
+    codeLink = "https://github.com/rehlingera/bamazon";
+  }
   else if(label==="boredom") {
     title = "BoreDom";
     description = "BoreDom is an API app that will take a search term and display results from Google Books, Open Movie Database and Edamam (a recipe database). When a search is executed, the search term is logged in Google FireBase and called into a button on the app for future use.";
