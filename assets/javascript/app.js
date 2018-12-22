@@ -38,9 +38,15 @@ $(document).on("mousedown", ".carousel-item", function() {
     deployLink = "https://github.com/rehlingera/liri-node-app";
     codeLink = "https://github.com/rehlingera/liri-node-app";
   }
+  else if(label==="friendFinder") {
+    title = "FriendFinder";
+    description = "A website that matches the user with a friend based on a personality quiz.";
+    deployLink = "https://warm-dawn-60945.herokuapp.com/";
+    codeLink = "https://github.com/rehlingera/FriendFinder";
+  }
   else if(label==="bamazon") {
     title = "Bamazon";
-    description = "An console app masquerading as an online store. Some of the items appear to be cursed.";
+    description = "A console app masquerading as an online store. Some of the items appear to be cursed.";
     deployLink = "https://github.com/rehlingera/bamazon";
     codeLink = "https://github.com/rehlingera/bamazon";
   }
