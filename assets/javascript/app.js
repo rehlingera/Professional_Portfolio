@@ -20,6 +20,12 @@ $(document).on("mousedown", ".carousel-item", function() {
     deployLink = "https://rehlingera.github.io/Word-Guess-Game";
     codeLink = "https://github.com/rehlingera/Word-Guess-Game";
   }
+  else if(label==="burger") {
+    title = "Eat-Da-Burger";
+    description = "A demonstration of Express Handlebars, MySQL, and Express. Create burgers and devour them.";
+    deployLink = "https://blooming-chamber-53517.herokuapp.com/";
+    codeLink = "https://github.com/rehlingera/burger";
+  }
   else if(label==="trivia") {
     title = "Video Game Trivia";
     description = "A trivia game themed on video games and using a skeumorphic design. The questions span multiple time periods, consoles and genres, so it may get challenging! Use the mouse to play the game. Answer 20 randomized questions and get your result.";
