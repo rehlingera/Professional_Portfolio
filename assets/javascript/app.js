@@ -20,6 +20,12 @@ $(document).on("mousedown", ".carousel-item", function() {
     deployLink = "https://rehlingera.github.io/Word-Guess-Game";
     codeLink = "https://github.com/rehlingera/Word-Guess-Game";
   }
+  else if(label==="hg") {
+    title = "Hero Genesis";
+    description = "Hero genesis is an open platform for RPG players and Dungeon Masters to generate and exchnage ideas.";
+    deployLink = "https://lit-reaches-81284.herokuapp.com/";
+    codeLink = "https://github.com/Lamuel27/Hero-Genesis";
+  }
   else if(label==="burger") {
     title = "Eat-Da-Burger";
     description = "A demonstration of Express Handlebars, MySQL, and Express. Create burgers and devour them.";
