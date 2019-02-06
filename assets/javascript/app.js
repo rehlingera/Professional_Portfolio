@@ -20,6 +20,12 @@ $(document).on("mousedown", ".carousel-item", function() {
     deployLink = "https://rehlingera.github.io/Word-Guess-Game";
     codeLink = "https://github.com/rehlingera/Word-Guess-Game";
   }
+  else if(label==="rsp") {
+    title = "Real Scraped Politics";
+    description = "A web scraper designed to pull the latest articles from Real Clear Politics.";
+    deployLink = "https://fast-inlet-68980.herokuapp.com/";
+    codeLink = "https://github.com/rehlingera/Homework-16";
+  }
   else if(label==="hg") {
     title = "Hero Genesis";
     description = "Hero genesis is an open platform for RPG players and Dungeon Masters to generate and exchnage ideas.";
