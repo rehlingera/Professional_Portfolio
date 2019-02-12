@@ -20,6 +20,12 @@ $(document).on("mousedown", ".carousel-item", function() {
     deployLink = "https://rehlingera.github.io/Word-Guess-Game";
     codeLink = "https://github.com/rehlingera/Word-Guess-Game";
   }
+  else if(label==="cc") {
+    title = "Cat Consoler";
+    description = "A clicky game built in React.";
+    deployLink = "https://rehlingera.github.io/Clicky-Game/";
+    codeLink = "https://github.com/rehlingera/Clicky-Game/";
+  }
   else if(label==="rsp") {
     title = "Real Scraped Politics";
     description = "A web scraper designed to pull the latest articles from Real Clear Politics.";
