@@ -20,6 +20,12 @@ $(document).on("mousedown", ".carousel-item", function() {
     deployLink = "https://rehlingera.github.io/Word-Guess-Game";
     codeLink = "https://github.com/rehlingera/Word-Guess-Game";
   }
+  else if(label==="bk") {
+    title = "BookKeeper";
+    description = "A reading list manager built in React, connected to the Google Books API.";
+    deployLink = "https://obscure-lowlands-48939.herokuapp.com/";
+    codeLink = "https://github.com/rehlingera/Google-Books-Search";
+  }
   else if(label==="cc") {
     title = "Cat Consoler";
     description = "A clicky game built in React.";

@@ -22,12 +22,21 @@ body {
 
 .labelFloat {
     position: relative;
-    top: -206px;
+    top: -406px;
     text-align: center;
     background-color: RGBA(0,0,0,.5);
     color: white;
     padding-bottom: 5px;
     display: none;
+}
+
+.carousel {
+    height:500px!important
+}
+
+.carousel-item {
+    height:400px!important;
+    width:400px!important
 }
 
 .carousel-item:hover>.labelFloat {
