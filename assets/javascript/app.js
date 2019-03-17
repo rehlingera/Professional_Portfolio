@@ -20,6 +20,12 @@ $(document).on("mousedown", ".carousel-item", function() {
     deployLink = "https://rehlingera.github.io/Word-Guess-Game";
     codeLink = "https://github.com/rehlingera/Word-Guess-Game";
   }
+  else if(label==="sc") {
+    title = "scriptr";
+    description = "A React application that helps the user learn and study different coding languages. Created in partnership with Sam Rehlinger.";
+    deployLink = "https://powerful-chamber-64882.herokuapp.com/";
+    codeLink = "https://github.com/Lamuel27/scriptr";
+  }
   else if(label==="bk") {
     title = "BookKeeper";
     description = "A reading list manager built in React, connected to the Google Books API.";
