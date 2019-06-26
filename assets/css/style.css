@@ -52,3 +52,15 @@ body {
 .brand-logo {
     font-size: 1.5rem!important;
 }
+
+@media only screen and (max-width: 767px){
+    #bckgrnd {
+      width:300%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #bckgrnd {
+      width:100%;
+    }
+}
