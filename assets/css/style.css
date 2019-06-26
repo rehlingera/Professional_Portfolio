@@ -1,4 +1,10 @@
-nav, .page-footer {
+/* ALL SCREENS */
+#homeNav {
+    background-color:rgba(0,0,0,0);
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.page-footer {
     background-color:rgb(65,158,130);
 }
 
@@ -17,7 +23,7 @@ p {
 }
 
 body {
-    background-color:rgb(90,219,181)
+    background-color:rgb(255,168,140)
 }
 
 .labelFloat {
@@ -28,6 +34,24 @@ body {
     color: white;
     padding-bottom: 5px;
     display: none;
+}
+
+.navLink {
+    height: 100%;
+}
+
+.mobLink {
+    height:35px;
+    width:35px;
+    position:fixed;
+    top:15px;
+    padding:0px;
+    z-index:999;
+}
+
+.icon {
+    height:35px;
+    width:35px;
 }
 
 .carousel {
@@ -53,12 +77,21 @@ body {
     font-size: 1.5rem!important;
 }
 
+
+/* MOBILE SCREENS */
 @media only screen and (max-width: 767px){
     #bckgrnd {
-      width:300%;
+      width:350%;
+    }
+
+    .brand-logo {
+        left:15%!important;
+        position:fixed!important;
     }
 }
 
+
+/* DESKTOP SCREENS */
 @media only screen and (min-width: 768px) {
     #bckgrnd {
       width:100%;
