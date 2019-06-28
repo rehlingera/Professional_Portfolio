@@ -120,6 +120,8 @@ body {
 }
 
 #bodyFooterWrapper {
+    position:relative;
+    top:650px;
     transition: top .5s;
 }
 
@@ -141,21 +143,26 @@ body {
     }
 
     #guy {
-        height: 110vh;
-        width: 400vw;
-        left: -150vw;
+        top:0px;
+        height: 100vh;
+        width: 350vw;
+        left: -127vw;
     }
 
     #glasses {
-        left: 23.5vw;
-        top: 40vh;
-        width: 60vw;
-        height: 12vh;
+        left: 24.5vw;
+        top: 43vh;
+        width: 53vw;
+        height: 11vh;
     }
 
     .brand-logo {
         left:15%!important;
         position:fixed!important;
+    }
+
+    #bodyFooterWrapper {
+        top:72vh;
     }
 }
 
