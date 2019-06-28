@@ -130,19 +130,25 @@ body {
 
 /* MOBILE SCREENS */
 @media only screen and (max-width: 767px){
+    body {
+        height: 100%;
+        overflow: auto;
+        margin: 0;
+    }
+
     #bckgrnd {
       width:350%;
     }
 
     #guy {
-        height:120%;
+        height:115%;
         width:375%;
         left:-140%;
     }
 
     #glasses {
         left: 21%;
-        top: 45%;
+        top: 42%;
         width: 60%;
         height: 12%;
     }
