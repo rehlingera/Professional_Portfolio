@@ -141,16 +141,16 @@ body {
     }
 
     #guy {
-        height:115%;
-        width:375%;
-        left:-140%;
+        height: 110vh;
+        width: 400vw;
+        left: -150vw;
     }
 
     #glasses {
-        left: 21%;
-        top: 42%;
-        width: 60%;
-        height: 12%;
+        left: 23.5vw;
+        top: 40vh;
+        width: 60vw;
+        height: 12vh;
     }
 
     .brand-logo {
