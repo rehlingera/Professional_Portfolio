@@ -38,6 +38,10 @@ function dragElement(elmnt) {
     document.onmousemove = elementDrag;
     document.ontouchend = closeDragElement;
     document.ontouchmove = elementDrag;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      backgroundChange();
+      moved=true;
+    }
   }
 
   function elementDrag(e) {
@@ -51,12 +55,6 @@ function dragElement(elmnt) {
       elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
       t = elmnt.offsetTop - pos2
       l = elmnt.offsetLeft - pos1
-      if (l > 70 && l < 85 && t > 280 && t < 295) {
-        backgroundChange();
-      }
-      if (l < 70 || l > 85 || t < 280 || t > 295) {
-        backgroundChangeBack();
-      }
     }
     else {
       pos1 = pos3 - e.clientX;
@@ -77,6 +75,9 @@ function dragElement(elmnt) {
   }
 
   function closeDragElement() {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      backgroundChangeBack();
+    }
     document.onmouseup = null;
     document.onmousemove = null;
     document.ontouchstart = null;
@@ -85,19 +86,6 @@ function dragElement(elmnt) {
 
   elmnt.onmouseup = function () {
     if (l > 655 && l < 665 && t > 300 && t < 320) {
-      console.log("t=" + t + " l=" + l);
-      console.log("nice");
-      moved = true;
-      console.log(moved);
-      bouncyAnimation();
-      setTimeout(function () {
-        window.scrollTo(0, 320);
-      }, 250);
-    };
-  };
-
-  elmnt.ontouchend = function () {
-    if (l > 70 && l < 85 && t > 280 && t < 295) {
       console.log("t=" + t + " l=" + l);
       console.log("nice");
       moved = true;
