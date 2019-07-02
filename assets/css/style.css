@@ -107,10 +107,9 @@ body {
 
 #glasses {
     position: fixed;
-    left: 660px;
-    top: 200px;
-    width: 225px;
-    height: 76.58px;
+    left: 43.5vw;
+    top: 14vh;
+    width: 15vw;
     transform: rotate(0deg);
     transition: transform .25s;
 }
@@ -139,21 +138,21 @@ body {
     }
 
     #bckgrnd {
-      width:350%;
+        width:100%;
+        height:100%;
     }
 
     #guy {
         top:0px;
         height: 100vh;
-        width: 350vw;
-        left: -127vw;
+        width: 325vw;
+        left: -115vw;
     }
 
     #glasses {
-        left: 24.5vw;
-        top: 43vh;
-        width: 53vw;
-        height: 11vh;
+        left: 25.5vw;
+        top: 43.5vh;
+        width: 50vw;
     }
 
     .brand-logo {
