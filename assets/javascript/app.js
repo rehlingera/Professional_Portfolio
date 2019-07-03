@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   window.scrollTo(0, 0);
   dragElement(document.getElementById("glasses"));
-  console.log(moved)
 
   setInterval(function () {
     if (moved === false) {
@@ -21,6 +20,26 @@ document.addEventListener('DOMContentLoaded', function () {
     };
   }, 2000)
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  cloudsMove();
+});
+
+document.addEventListener('scroll', function () {
+  var elem1 = document.getElementById("cloud");
+  var elem2 = document.getElementById("cloud2");
+  elem1.style.top = (0 - window.scrollY/4) + "px";
+  elem2.style.top = (0 - window.scrollY/4) + "px";
+})
+
+function cloudsMove() {
+  setTimeout(function () {
+    var elem1 = document.getElementById("cloud");
+    var elem2 = document.getElementById("cloud2");
+    elem1.style.left = 100 + "%";
+    elem2.style.left = 0 + "%";
+  }, 0);
+};
 
 function dragElement(elmnt) {
   console.log("drag loaded")
@@ -40,7 +59,7 @@ function dragElement(elmnt) {
     document.ontouchmove = elementDrag;
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       backgroundChange();
-      moved=true;
+      moved = true;
     }
   }
 
@@ -71,6 +90,7 @@ function dragElement(elmnt) {
       if (l < 655 || l > 665 || t < 300 || t > 320) {
         backgroundChangeBack();
       }
+      console.log(l + " " + t)
     }
   }
 
