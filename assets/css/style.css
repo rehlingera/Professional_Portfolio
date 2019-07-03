@@ -187,12 +187,12 @@ nav {
         top: 72vh;
     }
     #cloud {
-        height: 100%;
-        width: 325%;
+        height: 100vh;
+        width: 325vw;
     }
     #cloud2 {
-        height: 100%;
-        width: 325%;
+        height: 100vh;
+        width: 325vw;
     }
 }
 
