@@ -1,6 +1,6 @@
 # Professional_Portfolio
 
-<a href="https://rehlingera.github.io/Professional_Portfolio" target="_blank">Deployed page</a>
+<a href="https://rehlingera.github.io/me" target="_blank">Deployed page</a>
 <br />
 <br />
 Libraries used:
