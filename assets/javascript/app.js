@@ -22,23 +22,47 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+  introAnimation();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
   cloudsMove();
 });
 
 document.addEventListener('scroll', function () {
   var elem1 = document.getElementById("cloud");
   var elem2 = document.getElementById("cloud2");
-  elem1.style.top = (0 - window.scrollY/4) + "px";
-  elem2.style.top = (0 - window.scrollY/4) + "px";
+  elem1.style.top = (0 - window.scrollY / 4) + "px";
+  elem2.style.top = (0 - window.scrollY / 4) + "px";
 })
+
+function introAnimation() {
+    console.log("Intro animation called");
+    var cloud1 = document.getElementById("cloud");
+    var cloud2 = document.getElementById("cloud2");
+    var guy = document.getElementById("guy");
+    var glasses = document.getElementById("glasses");
+  setTimeout(function () {
+    cloud1.style.opacity = .25;
+    cloud2.style.opacity = .25;
+  }, 1);
+  setTimeout(function() {
+    guy.style.top = 0-50 + "px";
+    guy.style.opacity = 1;
+  }, 500);
+  setTimeout(function() {
+    glasses.style.opacity = 1;
+  },750);
+}
 
 function cloudsMove() {
   setTimeout(function () {
+    console.log("Cloud movements loaded")
     var elem1 = document.getElementById("cloud");
     var elem2 = document.getElementById("cloud2");
     elem1.style.left = 100 + "%";
     elem2.style.left = 0 + "%";
-  }, 0);
+  }, 1);
 };
 
 function dragElement(elmnt) {

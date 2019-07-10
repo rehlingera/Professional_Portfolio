@@ -94,13 +94,16 @@ body {
 
 #guy {
     position: fixed;
-    top: -50px;
+    top: 0px;
     width: 100%;
+    opacity: 0;
+    transition: top 1s, opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #bckgrnd {
     position: fixed;
-    top: -50px;
+    top: 0px;
     width: 100%;
     opacity: 0;
     transition: opacity .5s;
@@ -111,8 +114,10 @@ body {
     left: 43.5vw;
     top: 14vh;
     width: 15vw;
+    opacity: 0;
     transform: rotate(0deg);
-    transition: transform .25s;
+    transition: transform .25s, opacity 1s;
+    transition-timing-function: ease-out;
 }
 
 #header {
@@ -139,9 +144,9 @@ nav {
     width: 25vw;
     top: 0px;
     left: 0%;
-    opacity: .25;
+    opacity: 0;
     width: 100%;
-    transition: left 120s;
+    transition: left 120s, opacity 1s;
     transition-timing-function: ease-out;
 }
 
@@ -150,9 +155,9 @@ nav {
     width: 25vw;
     top: 0px;
     left: -100%;
-    opacity: .25;
+    opacity: 0;
     width: 100%;
-    transition: left 120s;
+    transition: left 120s, opacity 1s;
     transition-timing-function: ease-out;
 }
 
