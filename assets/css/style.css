@@ -120,6 +120,16 @@ body {
     transition-timing-function: ease-out;
 }
 
+#sign {
+    position:fixed;
+    left: 15vw;
+    top: -50vh;
+    width: 20vw;
+    transform: rotate(5deg);
+    transition: transform .5s, top .25s, left .5s;
+    transition-timing-function: ease-in-out;
+}
+
 #header {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(247, 151, 119, 1) 90%);
 }
@@ -181,7 +191,7 @@ nav {
     }
     #glasses {
         left: 25.5vw;
-        top: 43.5vh;
+        top: 36.5vh;
         width: 50vw;
     }
     .brand-logo {
@@ -198,6 +208,9 @@ nav {
     #cloud2 {
         height: 100vh;
         width: 325vw;
+    }
+    #sign {
+        width:37vw;
     }
 }
 

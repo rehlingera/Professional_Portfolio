@@ -1,11 +1,6 @@
 var moved = false;
 
 document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.parallax');
-  var instances = M.Parallax.init(elems);
-});
-
-document.addEventListener('DOMContentLoaded', function () {
   var elems = document.querySelectorAll('.carousel');
   var instances = M.Carousel.init(elems);
 });
@@ -23,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
   introAnimation();
-});
-
-document.addEventListener('DOMContentLoaded', function () {
   cloudsMove();
+  setTimeout(function() {
+    signIn();
+  },2000);
 });
 
 document.addEventListener('scroll', function () {
@@ -57,13 +52,58 @@ function introAnimation() {
 
 function cloudsMove() {
   setTimeout(function () {
-    console.log("Cloud movements loaded")
+    console.log("Cloud movements loaded");
     var elem1 = document.getElementById("cloud");
     var elem2 = document.getElementById("cloud2");
     elem1.style.left = 100 + "%";
     elem2.style.left = 0 + "%";
   }, 1);
 };
+
+function signIn() {
+  console.log("Sign loaded");
+  var sign = document.getElementById("sign");
+  setTimeout(function() {
+    sign.style.top = "-5vh";
+    sign.style.left = "22vw";
+    sign.style.transform = "rotate(-2deg)";
+  },1000);
+  setTimeout(function() {
+    sign.style.top = "-10vh";
+  },1250);
+  setTimeout(function() {
+    sign.style.top = "-5vh";
+    sign.style.left = "19vw";
+    sign.style.transform = "rotate(1deg)";
+  }, 1500);
+  setTimeout(function() {
+    sign.style.top = "-7vh";
+  },1750);
+  setTimeout(function() {
+    sign.style.top = "-5vh";
+    sign.style.left = "20vw";
+    sign.style.transform = "rotate(0deg)";
+  }, 2000);
+  setTimeout(function() {
+  signAnimate();
+  },2001)
+}
+
+var signAnimate = function() {
+  console.log("Sign animation loaded");
+  var sign = document.getElementById("sign");
+  setInterval(function(){
+    setTimeout(function() {
+      sign.style.top = "-5.25vh";
+    },0);
+    setTimeout(function() {
+      sign.style.top = "-4.25vh";
+    },250);
+    setTimeout(function() {
+      sign.style.top = "-5vh";
+    },500);
+  },3000)
+}
 
 function dragElement(elmnt) {
   console.log("drag loaded")
